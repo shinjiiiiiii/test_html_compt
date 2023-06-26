@@ -4,11 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="test html comp">
   <title></title>
 </head>
 <body>
-  
+  <header>
+    <div>
+      <img src="/image_16.jpg">
+    </div>
+    <h1>titre</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="#grid">grid</a></li>
+        <li><a href="#parraloux">parraloux</a></li>
+        <li><a href="#footer">footer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid" id="grid" data-spy>
+      <div class="un"></div>
+      <div class="deux"></div>
+      <div class="trois"></div>
+      <div class="quatre"></div>
+      <div class="cinque"></div>
+      <div class="six"></div>
+    </section>
+
+    <section class="parraloux" id="parraloux" data-spy>
+      <h2>parraloux</h2>
+      <hr>
+    </section>
+
+  </main>
+
+  <footer id="footer" data-spy>
+    <a>copyright</a>
+    <p>adios</p>
+  </footer>
+
+
+
   <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>

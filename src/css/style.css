@@ -1,0 +1,155 @@
+body{
+    font-size: 40%;
+}
+header{
+    height: 80px;
+    background-color: rgb(18, 192, 227);
+    color: white;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    right: 0;   
+    margin-bottom: 50px;
+}
+header > div{
+    height: 100%;
+    width: 33.33%;
+}
+header img{
+    height: 100%;
+    width: auto;
+}
+header h1{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em;
+    text-align: center;
+}
+header nav{
+    height: 100%;
+    width: 33.33%;
+}
+header nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+header nav ul li a{
+    padding: 10px 0px;
+    font-size: 2.5em;
+    color: white;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    background-color: orange;
+}
+main{
+    margin: 0px 10% 50px 10%;
+}
+.grid{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 10px;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+.grid div{
+    background-color: black;
+    height: 150px;
+}
+.parraloux{
+    height: 800px;
+    color: white;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+.parraloux hr{
+    background: url(/image_16.jpg);
+    border: none;
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    font-size: 2em;
+}
+@media screen and (min-width: 700px) {
+    body{
+        font-size: 50%;
+    }
+    header nav ul li a{
+        padding: 5px 5px;
+    }
+    header{
+        height: 120px;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fill, 49%);
+        justify-content: center;
+    }
+    .grid div{
+        height: 200px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    body{
+        font-size: 70%;
+    }
+    header{
+        height: 150px;
+    }
+    .grid{
+        display: grid; 
+        grid-template-columns: 164px 129px 130px 2.9fr 6fr 3.7fr; 
+        grid-template-rows: 166px 114px 195px 13.4fr 12.4fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "a a . b . f"
+          ". e e b . f"
+          ". e e . d ."
+          "c c . . d ."
+          ". . . . . ."; 
+    }
+    .grid div{
+        border: 1px solid blue;
+    }
+    .un{
+        grid-area: a;
+    }
+    .deux{
+        grid-area: b;
+    }
+    .trois{
+        grid-area: c;
+    }
+    .quatre{
+        grid-area: d;
+    }
+    .cinque{
+        grid-area: e;
+    }
+    .six{
+        grid-area: f;
+    }
+    .grid div{
+        height: 250px;
+    }
+  }
